@@ -9,14 +9,14 @@ import UIKit
 
 class TranslatorViewController: UIViewController {
 
-    @IBOutlet weak var russImageView: UIImageView!
-    @IBOutlet weak var ukImageView: UIImageView!
+    @IBOutlet weak var firstImageView: UIImageView!
+    @IBOutlet weak var secondImageView: UIImageView!
     
-    @IBOutlet weak var russView: UIView!
-    @IBOutlet weak var ukView: UIView!
+    @IBOutlet weak var firstView: UIView!
+    @IBOutlet weak var secondView: UIView!
     
-    @IBOutlet weak var russTextView: UITextView!
-    @IBOutlet weak var ukTextView: UITextView!
+    @IBOutlet weak var firstTextView: UITextView!
+    @IBOutlet weak var secondTextView: UITextView!
     
     override func viewDidLoad() {
         super.viewDidLoad()

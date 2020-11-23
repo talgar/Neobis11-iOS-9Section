@@ -7,19 +7,31 @@
 
 import UIKit
 
-class HistoryViewController: UIViewController {
+class HistoryViewController: UICollectionViewController,UICollectionViewDelegateFlowLayout {
 
-    @IBOutlet weak var tableView: UITableView!
-    
-    
+        
     override func viewDidLoad() {
         super.viewDidLoad()
-        tableView.rowHeight = UITableView.automaticDimension
         // Do any additional setup after loading the view.
     }
     
+    override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return 10
+    }
     
-    read about 2 cell , how to work with them
     
+    override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! HistoryCell
+        cell.contentView.isUserInteractionEnabled = true
+        cell.layer.cornerRadius = 8
+        cell.firstText.text = "ciukdsbvcdsjlhbvidusjkbcldhsjbclkdshjvcnkjdsbvnjkdsbvldsnkjlvbdskvldjbvkdjbvdsklvbdskvbmdskvbdskvmbdskvbdsklvmbsdkvmbskvmbsdkvbmsdvksmbdvksbvskdbvksdvbskdvbkdlbvciukdsbvcdsjlhbvidusjkbcldhsjbclkdshjvcnkjdsbvnjkdsbvldsnkjlvbdskvldjbvkdjbvdsklvbdskvbmdskvbdskvmbdskvbdsklvmbsdkvmbskvmbsdkvbmsdvksmbdvksbvskdbvksdvbskdvbkdlbv"
+        cell.secondText.text = "ciukdsbvcdsjlhbvidusjkbcldhsjbclkdshjvcnkjdsbvnjkdsbvldsnkjlvbdskvldjbvkdjbvdsklvbdskvbmdskvbdskvmbdskvbdsklvmbsdkvmbskvmbsdkvbmsdvksmbdvksbvskdbvksdvbskdvbkdlbvciukdsbvcdsjlhbvidusjkbcldhsjbclkdshjvcnkjdsbvnjkdsbvldsnkjlvbdskvldjbvkdjbvdsklvbdskvbmdskvbdskvmbdskvbdsklvmbsdkvmbskvmbsdkvbmsdvksmbdvksbvskdbvksdvbskdvbkdlbv"
+        
+        return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return .init(width: 340, height: 300)
+    }
 }
 
