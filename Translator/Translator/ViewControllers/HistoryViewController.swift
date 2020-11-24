@@ -21,7 +21,7 @@ class HistoryViewController: UICollectionViewController,UICollectionViewDelegate
     
     
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! HistoryCell
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! HistoryViewCell
         cell.contentView.isUserInteractionEnabled = true
         cell.layer.cornerRadius = 8
         cell.firstText.text = "ciukdsbvcdsjlhbvidusjkbcldhsjbclkdshjvcnkjdsbvnjkdsbvldsnkjlvbdskvldjbvkdjbvdsklvbdskvbmdskvbdskvmbdskvbdsklvmbsdkvmbskvmbsdkvbmsdvksmbdvksbvskdbvksdvbskdvbkdlbvciukdsbvcdsjlhbvidusjkbcldhsjbclkdshjvcnkjdsbvnjkdsbvldsnkjlvbdskvldjbvkdjbvdsklvbdskvbmdskvbdskvmbdskvbdsklvmbsdkvmbskvmbsdkvbmsdvksmbdvksbvskdbvksdvbskdvbkdlbv"

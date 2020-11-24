@@ -328,7 +328,7 @@
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="iOj-XG-ZOw" customClass="HistoryCell" customModule="Translator" customModuleProvider="target">
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="iOj-XG-ZOw" customClass="HistoryViewCell" customModule="Translator" customModuleProvider="target">
                                 <rect key="frame" x="53.5" y="0.0" width="307" height="147"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="4XL-l9-EN8">
@@ -392,6 +392,7 @@
                                 <size key="customSize" width="307" height="147"/>
                                 <connections>
                                     <outlet property="firstText" destination="gav-C2-d8v" id="xUu-wn-A4Y"/>
+                                    <outlet property="hSpeakerBTN" destination="HCJ-mB-sBR" id="F3t-6h-ISA"/>
                                     <outlet property="secondText" destination="ZjS-uw-eGb" id="hrM-Xd-8N1"/>
                                 </connections>
                             </collectionViewCell>
