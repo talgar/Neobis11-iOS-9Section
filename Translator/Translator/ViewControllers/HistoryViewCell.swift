@@ -13,4 +13,10 @@ class HistoryViewCell: UICollectionViewCell {
     @IBOutlet weak var secondText: UITextView!
     @IBOutlet weak var hSpeakerBTN: UIButton!
     
+
+    func setLabels(item : Text) {
+        firstText.text =  item.inputText
+        secondText.text = item.translatedText
+    }
+    
 }
